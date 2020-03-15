@@ -1,2 +1,10 @@
+## What is CQRS?
+
+![cqrs-diagram](https://lh3.googleusercontent.com/proxy/0C2BabimfhA3avxTEGnRzOTX-Hk6HfIxEsnb76BRIFlNL5QJty48ZWoxSuoyMN376-imqiZFdEqlNHE-G-rCZuGCW2wZhmRN9oAEVpzwbH2vN6pVbhDT4R0)
+
 ## What is Clean Architecture?
 ![clean-architecture-diagram](https://miro.medium.com/max/2944/1*ymbnPv2w9jxDxxS5SQAkTQ.png)
+
+## What is Mediatr?
+
+## What is FluentValidation?
