@@ -8,3 +8,5 @@
 ## What is Mediatr?
 
 ## What is FluentValidation?
+
+[FluentValidation](https://github.com/FluentValidation/FluentValidation) is a popular library for .NET applications that allows us to strongly type our validation rules.
