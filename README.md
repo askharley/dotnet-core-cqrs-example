@@ -6,7 +6,7 @@
 ![clean-architecture-diagram](https://miro.medium.com/max/2944/1*ymbnPv2w9jxDxxS5SQAkTQ.png)
 
 ## What is Mediatr?
+[Mediatr](https://github.com/jbogard/MediatR) is a simple library that allows .NET applications to easily implement a mediator pattern.
 
 ## What is FluentValidation?
-
 [FluentValidation](https://github.com/FluentValidation/FluentValidation) is a popular library for .NET applications that allows us to strongly type our validation rules.
