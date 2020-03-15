@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Harley\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Harley\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Harley\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_dotnet-core-cqrs-example.-2051874604.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Harley\Projects\askharley\dotnet-core-cqrs-example" t="IncludeFlat">
+      <e p="API" t="IncludeRecursive">
+        <e p="API.csproj" t="IncludeRecursive" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="blogging.db" t="Include" />
+        <e p="Controllers" t="Include">
+          <e p="ApiControllerBase.cs" t="Include" />
+          <e p="PostController.cs" t="Include" />
+          <e p="UserController.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="API.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="Application" t="IncludeRecursive">
+        <e p="Application.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Commands" t="Include">
+          <e p="Posts" t="Include">
+            <e p="CreatePost" t="Include">
+              <e p="CreatePostCommand.cs" t="Include" />
+              <e p="CreatePostCommandHandler.cs" t="Include" />
+              <e p="CreatePostCommandValidator.cs" t="Include" />
+            </e>
+            <e p="DeletePost" t="Include">
+              <e p="DeletePostCommand.cs" t="Include" />
+              <e p="DeletePostCommandHandler.cs" t="Include" />
+              <e p="DeletePostCommandValidator.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Users" t="Include">
+            <e p="CreateUser" t="Include">
+              <e p="CreateUserCommand.cs" t="Include" />
+              <e p="CreateUserCommandHandler.cs" t="Include" />
+              <e p="CreateUserCommandValidator.cs" t="Include" />
+            </e>
+            <e p="UpdateUser" t="Include">
+              <e p="UpdateUserCommand.cs" t="Include" />
+              <e p="UpdateUserCommandHandler.cs" t="Include" />
+              <e p="UpdateUserCommandValidator.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Common" t="Include">
+          <e p="Interfaces" t="Include">
+            <e p="IApplicationDbContext.cs" t="Include" />
+            <e p="ICommand.cs" t="Include" />
+            <e p="ICommandHandler.cs" t="Include" />
+            <e p="IQuery.cs" t="Include" />
+            <e p="IQueryHandler.cs" t="Include" />
+          </e>
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Application.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Queries" t="Include">
+          <e p="Posts" t="Include">
+            <e p="GetPost" t="Include">
+              <e p="GetPostQuery.cs" t="Include" />
+              <e p="GetPostQueryHandler.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Users" t="Include">
+            <e p="GetAllUsers" t="Include">
+              <e p="GetAllUsersQuery.cs" t="Include" />
+              <e p="GetAllUsersQueryHandler.cs" t="Include" />
+            </e>
+            <e p="GetUser" t="Include">
+              <e p="GetUserQuery.cs" t="Include" />
+              <e p="GetUserQueryHandler.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Core" t="Include" />
+      <e p="Domain" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Domain.csproj" t="IncludeRecursive" />
+        <e p="Entities" t="Include">
+          <e p="BaseEntity.cs" t="Include" />
+          <e p="Post.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="dotnet-core-cqrs-example.sln" t="IncludeFlat" />
+      <e p="Infrastructure" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Persistence" t="IncludeRecursive">
+        <e p="ApplicationDbContext.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Configurations" t="Include">
+          <e p="PostConfiguration.cs" t="Include" />
+          <e p="UserConfiguration.cs" t="Include" />
+        </e>
+        <e p="DependencyInjection.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="Persistence.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Persistence.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Presentation" t="Include" />
+    </e>
+  </component>
+</project>
