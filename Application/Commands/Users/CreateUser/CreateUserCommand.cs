@@ -3,7 +3,7 @@ using Application.Common.Interfaces;
 
 namespace Application.Commands.Users.CreateUser
 {
-    public class CreateUserCommand : ICommand<Guid>
+    public class CreateUserCommand : ICommand<int>
     {
         public string Name { get; set; }
         public string Surname { get; set; }

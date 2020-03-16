@@ -3,8 +3,8 @@ using Application.Common.Interfaces;
 
 namespace Application.Commands.Posts.DeletePost
 {
-    public class DeletePostCommand : ICommand<Guid>
+    public class DeletePostCommand : ICommand<int>
     {
-        public Guid PostId { get; set; }        
+        public int PostId { get; set; }        
     }
 }

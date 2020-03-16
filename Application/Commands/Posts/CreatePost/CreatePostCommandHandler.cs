@@ -7,7 +7,7 @@ using MediatR;
 
 namespace Application.Commands.Posts.CreatePost
 {
-    public class CreatePostCommandHandler : IRequestHandler<CreatePostCommand, Guid>
+    public class CreatePostCommandHandler : IRequestHandler<CreatePostCommand, int>
     {
         private readonly IApplicationDbContext _context;
 
@@ -16,11 +16,10 @@ namespace Application.Commands.Posts.CreatePost
             _context = context ?? throw new ArgumentException(nameof(context));
         }
 
-        public async Task<Guid> Handle(CreatePostCommand request, CancellationToken cancellationToken)
+        public async Task<int> Handle(CreatePostCommand request, CancellationToken cancellationToken)
         {
             Post post = new Post
             {
-                Id = Guid.NewGuid(),
                 UserId = request.UserId,
                 Title = request.Title,
                 Content = request.Content

@@ -7,6 +7,7 @@ namespace Application.Commands.Users.UpdateUser
     {
         public UpdateUserCommandValidator()
         {
+            RuleFor(x => x.Id).NotNull();
             RuleFor(x => x.Name).NotNull().NotEmpty().MaximumLength(255);
             RuleFor(x => x.Surname).NotNull().NotEmpty().MaximumLength(255);
             RuleFor(x => x.Email).NotNull().NotEmpty().MaximumLength(255);

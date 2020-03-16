@@ -7,7 +7,7 @@ using MediatR;
 
 namespace Application.Commands.Users.CreateUser
 {
-    public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, Guid>
+    public class CreateUserCommandHandler : IRequestHandler<CreateUserCommand, int>
     {
         private readonly IApplicationDbContext _context;
 
@@ -16,14 +16,13 @@ namespace Application.Commands.Users.CreateUser
             _context = context ?? throw new ArgumentException(nameof(context));
         }
 
-        public async Task<Guid> Handle(CreateUserCommand request, CancellationToken cancellationToken)
+        public async Task<int> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
             User user = new User
             {
-                Id = Guid.NewGuid(),
                 Name = request.Name,
                 Surname = request.Surname,
-                Email = request.Surname,
+                Email = request.Email,
                 Handle = request.Handle
             };
 

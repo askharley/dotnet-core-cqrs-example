@@ -1,4 +1,3 @@
-using System;
 using System.Threading.Tasks;
 using Application.Commands.Posts.CreatePost;
 using Application.Commands.Posts.DeletePost;
@@ -15,7 +14,7 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetPost(Guid id)
+        public async Task<IActionResult> GetPost(int id)
         {
             var post = await QueryAsync(new GetPostQuery {PostId = id});
             return Ok(post);
@@ -24,15 +23,15 @@ namespace API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreatePost(CreatePostCommand command)
         {
-            var result = await CommandAsync(command);
-            return Ok(result);
+            var postId = await CommandAsync(command);
+            return Ok(postId);
         }
         
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeletePost(Guid id)
+        public async Task<IActionResult> DeletePost(int id)
         {
-            var result = await CommandAsync(new DeletePostCommand{ PostId = id});
-            return Ok(result);
+            var postId = await CommandAsync(new DeletePostCommand{ PostId = id});
+            return Ok(postId);
         }
     }
 }

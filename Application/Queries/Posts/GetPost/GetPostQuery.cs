@@ -6,6 +6,6 @@ namespace Application.Queries.Posts.GetPost
 {
     public class GetPostQuery : IQuery<Post>
     {
-        public Guid PostId { get; set; }
+        public int PostId { get; set; }
     }
 }

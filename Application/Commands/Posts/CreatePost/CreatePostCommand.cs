@@ -3,9 +3,9 @@ using Application.Common.Interfaces;
 
 namespace Application.Commands.Posts.CreatePost
 {
-    public class CreatePostCommand : ICommand<Guid>
+    public class CreatePostCommand : ICommand<int>
     {
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
     }

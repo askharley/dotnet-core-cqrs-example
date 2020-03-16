@@ -1,8 +1,6 @@
-using System;
 using System.Threading.Tasks;
 using Application.Commands.Users.CreateUser;
 using Application.Commands.Users.UpdateUser;
-using Application.Queries.Posts.GetPost;
 using Application.Queries.Users.GetAllUsers;
 using Application.Queries.Users.GetUser;
 using MediatR;
@@ -17,10 +15,10 @@ namespace API.Controllers
         }
         
         [HttpGet]
-        public async Task<IActionResult> GetUser(Guid id)
+        public async Task<IActionResult> GetUser(int id)
         {
-            var post = await QueryAsync(new GetUserQuery {UserId = id});
-            return Ok(post);
+            var user = await QueryAsync(new GetUserQuery {UserId = id});
+            return Ok(user);
         }
 
         [HttpGet]
@@ -34,8 +32,8 @@ namespace API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUser(CreateUserCommand command)
         {
-            var post = await CommandAsync(command);
-            return Ok(post);
+            var userId = await CommandAsync(command);
+            return Ok(userId);
         }
         
         [HttpPut]
